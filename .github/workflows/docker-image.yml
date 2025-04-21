@@ -36,6 +36,8 @@ jobs:
         # skopeo copy docker://gcr.io/kaniko-project/executor:v1.13.0 docker://weiyigeek/kaniko-executor:v1.13.0
         docker pull ubuntu:24.04
         docker save ubuntu:24.04 -o ubuntu-24.04.tar
+    - name: List
+      run: ls -la
 
 #      with:
 #        name: my-artifact
@@ -46,5 +48,5 @@ jobs:
       with:  
         name: build-output  
         path: |  
-          *.tar  
+          ubuntu-24.04.tar  
         retention-days: 7  # 设置保留周期（默认 90 天）  
