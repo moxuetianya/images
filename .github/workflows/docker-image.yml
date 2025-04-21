@@ -46,7 +46,7 @@ jobs:
     - name: Upload artifacts  
       uses: actions/upload-artifact@v4  
       with:  
-        name: build-output  
+        name: ubuntu-24.04.tar
         path: |  
           ubuntu-24.04.tar  
         retention-days: 7  # 设置保留周期（默认 90 天）  
