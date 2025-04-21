@@ -39,4 +39,3 @@ jobs:
       with:
         name: my-artifact
         path: *.tar
-        retention-days: 7
